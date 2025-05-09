@@ -1433,7 +1433,7 @@ figure {
   .usa-img .usa-img-text {
     position: absolute;
     transform: translate(-10%, -50%);
-    background: linear-gradient(180deg, rgba(15, 15, 15, 0.568) 18%, rgba(0, 3, 3, 0.822) 100%);
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 18%, rgba(0, 3, 3, 0.5) 100%); 
     width: 40%;
     height: 140px;
     padding: 20px 15px;
