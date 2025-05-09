@@ -1625,7 +1625,6 @@ figure {
   .america-box-img{
     width: 100%;
   }
-
   
   .america-pt-content {
     top: -40px;
@@ -1642,6 +1641,14 @@ figure {
   .banner .slider-padding {
     left: 40%;
   }
+
+  .usa-img .usa-img-text {
+    position: static;
+    transform: translate(0, 0);
+    background: #6699c1;
+    width: 74;
+    margin: 24px auto 0;
+  } 
 }
 
 @media (max-width: 499.98px) {
