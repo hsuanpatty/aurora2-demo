@@ -1346,7 +1346,15 @@ figure {
     width: 30%;
   }
 
- }
+  .box-top {
+    position: static;
+    top: 0;
+  }
+
+  .america-pt-content {
+    top: 120px;
+}
+}
 
 @media (max-width: 1199.98px) { 
   .alaska-top {
@@ -1358,6 +1366,11 @@ figure {
     padding: 8px 6px;
   }
 
+  .usa-p {
+    width: 92%;
+    margin: auto;
+    padding: 100px 0 30px;
+  }
 }
 
 
@@ -1537,7 +1550,8 @@ figure {
     text-align: center;
   }
 
-  .class-w {
+  .class-w,
+  .class-w-2 {
     width:40%;
     padding-top: 0;
   }
