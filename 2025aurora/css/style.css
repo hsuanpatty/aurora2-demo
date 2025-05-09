@@ -1,0 +1,1891 @@
+@charset "UTF-8";
+* {
+  trnasition: 0.5s;
+  margin: 0;
+}
+
+:root {
+    --white: #ffffff;
+    --dark: #282828;
+    --primary: #fc52d1;
+    --red: #ff0000;
+    --darkblue: #0f0f4f;
+    --darkblue2: #0e1621;
+    --darkblue3: #041860;
+    --teal: #03395e;
+    --grey: #595959;
+    --lightgrey: #969696;
+    --lightyello: #fdffde;
+    --lightblue: #eef6ff;
+}
+
+p,
+li,
+section,
+header,
+footer {
+  font-family: 'Noto Sans TC', sans-serif;
+  letter-spacing: 1px;
+}
+
+
+/* container */
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+	padding-right: var(--bs-gutter-x, 0.75rem);
+	padding-left: var(--bs-gutter-x, 0.75rem);
+	margin-right: auto;
+	margin-left: auto;
+}
+@media (min-width: 576px) {
+	.container,
+	.container-sm {
+		max-width: 540px;
+	}
+}
+@media (min-width: 768px) {
+	.container,
+	.container-md,
+	.container-sm {
+		max-width: 720px;
+	}
+}
+@media (min-width: 992px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm {
+		max-width: 960px;
+	}
+}
+@media (min-width: 1200px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl {
+		max-width: 1140px;
+	}
+}
+@media (min-width: 1400px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl,
+	.container-xxl {
+		max-width: 1320px;
+	}
+}
+
+@media (min-width: 1900px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl,
+	.container-xxl,
+	.container-3xl{
+		max-width: 1320px;
+	}
+}
+
+.text-start {
+	text-align: left !important;
+}
+.text-end {
+	text-align: right !important;
+}
+.text-center {
+	text-align: center !important;
+}
+
+.w-50 {
+	width: 50% !important;
+}
+
+.w-60 {
+	width: 60% !important;
+}
+
+.w-75 {
+	width: 75% !important;
+}
+
+.w-80 {
+	width: 80% !important;
+}
+
+.w-85 {
+	width: 85% !important;
+}
+
+.w-90{
+  width: 90% !important;
+}  
+
+.w-100 {
+	width: 100%;
+}
+
+.vw-100 {
+	width: 100vw;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.d-block {
+	display: block !important;
+}
+
+.d-flex {
+	display: flex !important;
+}
+
+.d-inline-flex {
+	display: inline-flex !important;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.p-0 {
+	padding: 0rem !important;
+}
+
+.p-3 {
+    padding: 1rem !important;
+}
+
+.pt-1 {
+	padding-top: 0.25rem !important;
+}
+.pt-2 {
+	padding-top: 0.5rem !important;
+}
+.pt-3 {
+	padding-top: 1rem !important;
+}
+.pt-4 {
+	padding-top: 1.5rem !important;
+}
+
+.pt-5 {
+	padding-top: 3rem !important;
+}
+
+.pt-10 {
+	padding-top: 6rem !important;
+}
+
+.pt-15 {
+	padding-top: 9rem !important;
+}
+
+.pt-200 {
+	padding-top: 200px !important;
+}
+
+.pb-3 {
+	padding-bottom: 1rem !important;
+}
+
+.pb-4 {
+  padding-bottom: 1.5rem !important;
+}
+
+.pb-50 {
+	padding-bottom: 50px !important;
+}
+
+.pb-100 {
+	padding-bottom: 150px !important;
+}
+
+.pb-150 {
+	padding-bottom: 130px !important;
+}
+
+.pb-200 {
+	padding-bottom: 200px !important;
+}
+
+.pb-300 {
+	padding-bottom: 300px !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.py-4 {
+	padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.py-50 {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+.py-80 {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+}
+
+.py-100 {
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+
+.px-3 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+.row {
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: calc(var(--bs-gutter-y) * -1);
+	margin-right: calc(var(--bs-gutter-x) * -0.5);
+	margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  color: #041860;
+  background: #eef6ff;
+  text-align: center;
+  z-index: 999;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow:  rgba(0, 0, 0, 0.5) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+  
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+#goTop {
+  background-image: url(../images/TOP.png);
+  display: none;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 30px;
+  font-weight: 600;
+  line-height: 50px;
+  border-radius: 99rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+  z-index: 20;
+}
+
+#goTop:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+  
+.scroll-tag{
+  margin: auto;
+}
+  
+.logo {
+  display: inline-block;
+  font-size: 28px;
+}
+
+.logo-w{
+  width: 60%;
+}
+
+  
+ul {
+  display: inline-block;
+}
+  
+li {
+  display: inline-block;
+  padding: 8px ;
+  font-size: 22px;
+  font-weight: 600;
+}
+  
+.menu-height li {
+  cursor: pointer;
+}
+  
+.menu-height li.on,
+.menu-height .li:hover {
+  color: #0445af;
+}
+  
+h2 {
+  font-weight: 600;
+  color: #cf9f42;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+  
+p {
+  font-size: 16px;
+  color: var(--grey);
+  line-height: 1.8;
+  letter-spacing: 0.08rem;
+}
+  
+  
+section:nth-last-child {
+  margin-bottom: 0px;
+}
+
+.section .star {
+    display: inline-block;
+    position: relative;
+    background : url(../images/icon-1.png) no-repeat;
+    width: 22px;
+    height: 20px;
+    top: 2px;
+}
+  
+/* banner */
+.banner {
+    position: relative;
+}
+  
+.banner .slider-padding {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aurora-w{
+    width: 88%;
+
+    animation: dynamics 3s infinite;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes dynamics {
+  0% {
+    transform: translateY(-40px);
+    transform: scale(1.1);
+  }
+
+  40% {
+    transform: translateY(-10px);
+    transform: scale(1);
+  }
+
+  100% {
+    transform: translateY(-40px);
+    transform: scale(1.1);
+  }
+}
+
+/*  北歐  */
+.scroll-bg {
+    background: url(../images/bg-1.jpg) top no-repeat;
+    background-size: cover;
+}
+
+.tabs {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    transition: 0.25s;
+}
+  
+.tabs li {
+    cursor: pointer;
+    font-size: 20px;
+    width: 80px;
+    height: 25px;
+    border-radius: 20px 0 20px 0;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 15px 15px 5px 20px;
+    margin: auto;
+    transition: 0.3s;
+}
+  
+.tabs li.active {
+    border-color: var(--white);
+    color: #08344f;
+    background-color: var(--white);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.tabs-wrapper {
+  max-width: 550px;
+  width: 100%;
+}
+
+.tab-content-wrapper {
+padding: 20px 0;
+}
+
+
+/*  首選行程  */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card_box {
+    display: flex;
+    width: 80%;
+    height: 350px;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    color: var(--dark);
+    text-decoration: none;
+    margin: auto;
+    transition: 0.3s;
+    position: relative;
+}
+
+.card_travel {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.25s;
+}
+
+.card_travel:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgb(15 6 22 / 0%) 50%, rgb(16 7 24 / 0%));
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.card_box:hover .card_travel:after {
+  background: linear-gradient(180deg, rgba(44, 90, 199, 0) 60%, #0999b3 100%);
+    transition: 0.3s;
+}
+
+.travel_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.25s;
+}
+
+.card_box:hover .travel_image {
+  transform: scale(1.1);
+}
+
+.travel_content {
+    position: absolute;
+    width: 95%;
+    border-radius: 1.5rem;
+    background-color: #ffffffe5;
+    
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%,0);
+
+    z-index: 1;
+}
+
+.travel_location {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.travel_title {
+    text-align: left;
+    font-size: 18px;
+    color: var(--dark);
+    font-weight: bold;
+    font-family: 微軟正黑體;
+    letter-spacing: -0.5px;
+    line-height: 1.5rem;
+}
+
+.card_box:hover  .travel_title {
+    color: #066db1;
+    transition: 0.3s;
+}
+
+.travel_price {
+    text-align: right;
+    font-size: 25px;
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+
+.travel_price_2 {
+  text-align: right;
+  font-size: 25px;
+  color: var(--red);
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.travel_price span{
+    font-size: 18px;
+}
+
+
+/*   北歐   */
+
+.class-w {
+  width: auto;
+  padding-top: 50px;
+}
+
+.nordic-box-img,
+.america-box-img{
+  flex: 0 0 auto;
+	width: 100%;
+  padding-bottom: 20px;
+}
+
+.nordic-box-content,
+.america-box-content{
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.frame-box-content {
+  padding-top:  100px;
+}
+
+.nordic-box-content h3,
+.frame-box-content h3,
+.finland-box h3,
+.america-box-content h3{
+  font-size: 26px;
+  color: var(--darkblue);
+  font-weight: 600;
+  font-family: "Noto Serif TC", serif;
+  padding-left: 20px;
+} 
+
+.nordic-box-content h5 {
+  font-size: 20px;
+  color: var(--white);
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 0.2rem;
+  padding-top: 8px;
+  padding-left: 20px;
+  text-shadow:rgba(0, 0, 0, 0.5) 0px 3px 8px;
+}
+
+.nordic-box-content span img{
+  width: 4%;
+}
+
+.box-top {
+  position: relative;
+  top: 50px;
+}
+
+.frame-box-content h5 {
+  font-size: 20px;
+  color: var(--white);
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 0.2rem;
+  padding-top: 8px;
+  padding-left: 20px;
+  text-shadow:rgba(0, 0, 0, 0.8) 0px 3px 8px;
+}
+
+.text-content {
+  padding: 20px 15px 0 20px;
+}
+
+.nordic-box-content p {
+  font: 500 18px "微軟正黑體";
+  color: var(--white);
+  letter-spacing: 0.1rem;
+  line-height: 1.8em;
+  padding: 15px 0 5px;
+}
+
+/*  住宿圖 輪播 */
+.nordic-stay,
+.america-stay {
+  position: relative;
+  margin-top: 30px;
+}
+
+.nordic-stay .owl-stage-outer {
+  padding: 30px 0;
+}
+
+.nordic-stay .owl-nav {
+  display: none;
+}
+
+.nordic-stay .owl-dots {
+  text-align: center;
+}
+
+.nordic-stay .owl-dots .active {
+  box-shadow: none;
+}
+
+.nordic-stay  .owl-dots .active span {
+  background: var(--darkblue2);
+  box-shadow: none;
+  height: 15px;
+  width: 15px;
+  margin-bottom: -1px;
+}
+
+.nordic-stay  .owl-dots span {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+  background: var(--white);
+  margin: 0 5px;
+}
+
+.nordic-stay .card,
+.america-stay .card {
+  background: #fff;
+  box-shadow: 0 8px 24px -7px #c9dff0;
+  margin: 0 20px;
+  border: 0;
+}
+
+.nordic-stay .card .card-img-top {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.card-box {
+  position: relative;
+}
+
+.card-box .card-img-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0, rgba(0, 3, 3, 1) 100%);
+}
+
+.nordic-stay .card-img-text h5,
+.america-stay .card-img-text h5 {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 90%; 
+
+  color: var(--white);
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.3;
+  letter-spacing: 0.2rem;
+}
+
+.card-body img {
+  width: auto;
+}
+
+/*   按紐  */
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.a {
+  text-decoration:none;
+}
+
+.button-now {
+  position: relative;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: white;
+  background: #1e293b;
+  border: 2px solid rgb(139 236 250);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-now:before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  background: linear-gradient(45deg, #60a5fa, #a78bfa, #60a5fa);
+  border-radius: 15px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;  z-index: -1;
+  transition: opacity 0.3s ease;
+  animation: borderRotate 4s linear infinite;
+}
+
+@keyframes borderRotate {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.button-now:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(96, 165, 250, 0.4);
+}
+
+/* 挪威 */
+.frame_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.norway-box-content span .w-4{
+  width: 1.5%;
+}
+
+.norway-box-content h5 {
+  font-size: 20px;
+  color: var(--white);
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 0.2rem;
+  padding-top: 8px;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 3px 5px;
+}
+
+.frame_box  {
+  margin: auto;
+  height: 100%;
+}
+
+figure {
+  text-align: center ;
+}
+
+.frame_box img {
+  width: 90%;
+}
+
+.frame_title {
+  font-size: 20px;
+  color: var(--teal);
+  font-weight: 600;
+  font-family: "Noto Serif TC", serif;
+}
+
+.frame_title2,
+.finland_title {
+  color: #595959;
+  padding-top: 5px;
+  letter-spacing: 0.1rem;
+  line-height: 1.8em;
+}
+
+/*  芬蘭  */
+.finland-center{
+  text-align: center;
+  padding: 100px 0 50px;
+}
+
+.finland-box-img img {
+  width: 100%;
+}
+
+.finland-box h5 {
+  font-size: 20px;
+  color: var(--white);
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 0.2rem;
+  padding-top: 8px;
+  padding-left: 25px;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 3px 8px;
+}
+
+.finland-box-img{
+  flex: 0 0 auto;
+	width: 100%;
+  margin: auto;
+  padding: 10px 0 50px;
+}
+
+.finland-box-conten{
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 10px 0 50px;
+}
+
+.finland-text {
+  padding: 0 30px ;
+}
+
+.finland_title {
+  font-size: 20px;
+  color: #0e1621;
+  font-weight: 600;
+  font-family: "Noto Serif TC", serif;
+}
+
+.finland-items {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.finland-items img {
+  padding-left: 5px;
+}
+
+.owl-p{
+  padding: 0 30px;
+}
+
+.img {
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.img img {
+  width: 90%;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.267) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.finland-content {
+  position: relative;
+  margin-top: 30px;
+
+  background-color: var(--white);
+  width: 100%;
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px 0;
+
+  box-shadow: rgba(136, 165, 191, 0.596) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+}
+
+.finland-content .owl-stage-outer {
+  padding: 15px 0 30PX;
+}
+
+.finland-content .owl-nav {
+  display: none;
+}
+
+.finland-content .owl-dots {
+  text-align: center;
+}
+
+.finland-content .owl-dots .active {
+  box-shadow: none;
+}
+
+.finland-content  .owl-dots .active span {
+  background: var(--darkblue2);
+  box-shadow: none;
+  height: 15px;
+  width: 15px;
+  margin-bottom: -1px;
+}
+
+.finland-content  .owl-dots span {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+  background: #afafaf;
+  margin: 0 5px;
+}
+
+.order-1 {
+  order: 2;
+}
+
+.order-2 {
+  order: 1;
+}
+
+.order-3 {
+  order: 4;
+}
+
+.order-4 {
+  order: 3;
+}
+
+/*  冰島  */
+.frame2_box,
+.frame3_box  {
+  flex: 0 0 auto;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.frame2_box img {
+  width: 90%;
+}
+
+
+/*  美洲遊輪 */
+.america-pt {
+  position: relative;
+  padding: 100px 0;
+}
+
+.america-pt-content {
+  position: relative;
+  top: 50px;
+}
+
+.america-items {
+  display: flex;
+  align-items: center;
+}
+
+.america-items img {
+  padding-left: 5px;
+}
+
+.usa-p {
+  width: 90%;
+  margin: auto;
+  padding: 100px 0 0;
+}
+
+.usa-box h3 {
+  font-size: 26px;
+  color: var(--lightyello);
+  font-weight: 600;
+  font-family: "Noto Serif TC", serif;
+  padding-left: 20px;
+}
+
+
+.usa-box h5 {
+  font-size: 20px;
+  color: var(--white);
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 0.2rem;
+  padding-top: 8px;
+  padding-left: 25px;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 3px 8px;
+}
+
+.card-box-2 {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-box-2 .card-img {
+  width: 100%;
+}
+
+.card-box-2 .card-img-text-2,
+.card-box-2 .card-img-text-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,rgba(255, 255, 255, 0) 66%, rgba(0, 3, 3, 1) 100%);
+}
+
+.card-box-2 .card-img-text-2 .usa-box {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.card-box-2 .card-img-text-3 .usa-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+ .card-img-text-3 p {
+    font-size: 22px;
+    color: var(--white);
+    font-family: "Noto Serif TC", serif;
+    letter-spacing: 0.2rem;
+    padding-bottom: 20px;
+}
+
+/*  極光列車  */
+.class-w-2 {
+ position: absolute;
+}
+
+.usa-img {
+  position: relative;
+}
+
+.usa-img  .train-w{
+  width: 100%;
+  display: block;
+}
+
+.usa-img .usa-img-text {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(180deg,rgba(255, 255, 255, 0) 18%, rgba(0, 3, 3, 0.5) 100%); 
+  width: 20%;
+  height: 160px;
+  padding: 30px 20px 20px;
+  border-radius: 0 0 15px 15px;
+}
+
+.usa-img .usa-img-text p{
+  color: var(--white);
+  padding-top: 20px;
+} 
+
+.alaska-top {
+  position: relative;
+  top: -110px;
+}
+
+.aurora-bg {
+  background: url(../images/usa-4.jpg) bottom no-repeat;
+  background-size: cover;
+}
+
+.aurora-p {
+  padding-bottom: 700px;
+}
+
+/* media */
+
+@media (min-width: 490px) {
+    .grid,
+    .frame_grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card_box {
+      width: 100%;
+      height: 280px;
+    }
+
+    .tab-content-wrapper {
+      padding: 30px 8px 20px;
+    }
+
+    .travel_title {
+      font-size: 16px;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+    }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .frame_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .travel_price {
+    font-size: 20px;
+  }
+
+  .travel_price_2 {
+    font-size: 20px;
+  }
+
+  .frame2_box {
+  flex: 0 0 auto;
+  width: 50%;
+  padding-bottom: 20px;
+  } 
+  .frame_d {
+    display: flex;
+  }
+
+  .pt-15 {
+    padding-top: 12rem !important;
+  }
+
+  .aurora-p {
+    padding-bottom: 400px ;
+  }
+}
+
+@media (min-width: 992px) { 
+  .card_box {
+    height: 380px;
+  }
+  
+  .nordic-box-img,
+  .america-box-img{
+    flex: 0 0 auto;
+    width: 55.33333333%;
+  }
+  
+  .nordic-box-content,
+  .america-box-content{
+    flex: 0 0 auto;
+    width: 44.66666667%;
+    margin: auto;
+  }
+
+  .frame2_box {
+    flex: 0 0 auto;
+    width: 50%;
+    margin: auto;
+  }
+
+  .frame_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .finland-box-img{
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .finland-box-conten{
+    flex: 0 0 auto;
+    width: 40%;
+    margin: auto;
+  }
+
+  .order-1 {
+    order: 1;
+  }
+  
+  .order-2 {
+    order: 2;
+  }
+  
+  .order-3 {
+    order: 4;
+  }
+  
+  .order-4 {
+    order: 3;
+  }
+
+  .aurora-p {
+    padding-bottom: 630px ;
+  }
+}
+
+@media (min-width: 1400px) { 
+    li {
+        padding: 8px 10px;
+    }
+    .scroll-tag{
+        padding-right: 300px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        padding: 0 80px;
+    }
+
+    .frame_grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
+
+    .tabs {
+        gap: 20px;
+    }
+      
+    .tabs li {
+        font-size: 24px;
+        width: 100px;
+        height: 30px;
+    }
+
+    .card_box {
+      height: 450px;
+    }
+
+    .travel_price {
+      font-size: 27px;
+    }
+
+    .travel_price_2 {
+      font-size: 25px;
+    }
+
+    .travel_title {
+      font-size: 18px;
+    }
+
+    .nordic-box-img{
+      flex: 0 0 auto;
+      width: 50%;
+    }
+    
+    .nordic-box-content{
+      flex: 0 0 auto;
+      width: 48%;
+    }
+
+    .finland-box-img{
+      flex: 0 0 auto;
+      width: 55%;
+    }
+  
+    .finland-box-conten{
+      flex: 0 0 auto;
+      width: 45%;
+      margin: auto;
+    }
+
+    .frame2_box,
+    .frame3_box{
+      flex: 0 0 auto;
+      width: 33.33333333%;
+      margin: auto;
+    }
+
+    .frame_d {
+      display: block;
+    }
+    
+    .finland-content {
+      width: 75%;
+      padding: 10px 0;
+    }
+
+    .nordic-box-content p {
+      color: var(--white);
+      padding: 15px 50px 5px 0;
+    }
+
+    .frame_pt {
+      padding-top: 30px;
+    }
+
+    
+}
+
+@media (min-width:2200px) { 
+  .frame_title2 {
+    color: var(--lightgrey);
+  } 
+
+  .aurora-p {
+    padding-bottom: 800px ;
+  }
+}
+
+/* media max */
+
+@media (max-width: 1399.98px) {
+  .usa-img .usa-img-text {
+    transform: translate(-20%, -50%);
+    width: 30%;
+  }
+
+ }
+
+@media (max-width: 1199.98px) { 
+  .alaska-top {
+    position: static;
+    padding: 20px 40px 0 50px;
+  }
+
+  .scroll-tag li {
+    padding: 8px 6px;
+  }
+
+}
+
+
+@media (max-width: 991.98px) { 
+    nav {
+      padding: 15px 20px 8px 15px;
+    }
+  
+    li {
+      letter-spacing: 0.05rem;
+    }
+
+    .box-top {
+      top: -30px;
+    }
+
+    .finland-content {
+      width: 85%;
+    }
+
+    .img img {
+      width: 80%;
+    }
+  
+    .finland-center {
+      text-align: center;
+      padding: 70px 0 10px;
+    }
+
+    .nordic-box-img,
+    .america-box-img{
+      width: 90%;
+      margin: auto;
+    }
+
+    .class-w {
+      width: 22%;
+      padding-top: 50px;
+    }
+
+    .title-img2 {
+      width: 80%;
+      padding: 0;
+    }
+
+    .card-box-2 .card-img-text-2 .usa-box {
+      left: 22%;
+    }
+
+    
+  .alaska-top {
+    padding: 45px 40px;
+  }
+
+  
+  .america-box-content{
+    width: 90%;
+    margin: auto;
+  }
+
+  .america-pt-content {
+    top: -42px;
+  }
+
+  .america-pt {
+    padding: 100px 0 0;
+  }
+
+  .usa-img .usa-img-text {
+    position: absolute;
+    transform: translate(-10%, -50%);
+    background: linear-gradient(180deg, rgba(15, 15, 15, 0.568) 18%, rgba(0, 3, 3, 0.822) 100%);
+    width: 40%;
+    height: 140px;
+    padding: 20px 15px;
+    border-radius: 15px;
+    top: 50%;
+  }
+
+  .class-w-2 {
+    position: static;
+  }
+
+}
+  
+
+@media (max-width: 767.98px) { 
+  nav {
+    display: block;
+    padding: 10px 15px;
+  }
+
+  .title-img {
+    width: 50%;
+  }
+
+  .aurora-w {
+    width: 90%;
+  }
+
+  .button-now {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+
+  .text-content p {
+    padding: 20px 15px;
+  }
+
+  .usa-p {
+    width: 100%;
+    padding: 40px 0 0;
+  }
+
+  .usa-box h3 {
+    font-size: 18px;
+    color: var(--lightyello);
+    font-weight: 600;
+    font-family: "Noto Serif TC", serif;
+    padding-left: 10px;
+  }
+
+  .card-box-2 .card-img-text-2 .usa-box {
+    left: 28%;
+  } 
+
+  .usa-box h5 {
+    font-size: 13px;
+  }
+
+  .card-img-text-3 p {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+
+  .slash {
+    width: 6%;
+  }
+  
+  .aurora-p {
+    padding-bottom: 200px;
+  }
+
+  .text-content {
+    padding: 0 15px 0 20px;
+  }
+
+  .usa-img .usa-img-text {
+    position: static;
+    transform: translate(0, 0);
+    background: #6699c1;
+    width: 93%;
+    margin: 24px auto 0;
+  }   
+
+  .usa-p .py-4 {
+    padding-bottom: 0 !important;
+  }
+
+  .finland-content {
+    width: 95%;
+  }
+}
+
+
+@media (max-width: 575.98px) { 
+  .scroll-bg {
+    background: url(../images/bg-2.jpg) top no-repeat;
+  }
+
+  .class-img {
+    text-align: center;
+  }
+
+  .class-w {
+    width:40%;
+    padding-top: 0;
+  }
+
+  .box-top {
+    top: -20px;
+  }
+
+  .frame-box-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .nordic-box-content h3,
+  .frame-box-content h3,
+  .finland-box h3,
+  .finland-box h5,
+  .nordic-box-content h5,
+  .frame-box-content h5{
+    text-align: center;
+  } 
+
+  .button-wrapper {
+    padding-top: 20px;
+  }
+
+  .pt-15 {
+    padding-top: 6rem !important;
+  }
+
+  .frame_grid {  
+    gap: 1rem;
+  }
+
+  .nordic-box-content p {
+    letter-spacing: 0;
+  }
+
+  .finland-center {
+    width: 90%;
+    padding: 20px 0  10px;
+  }
+
+  .img img {
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .pb-4 {
+    padding-bottom: 0 !important;
+  }
+
+  .title-img {
+    width: 80%;
+    padding-top: 50px;
+  }
+
+  .title-img2 {
+    width: 90%;
+    padding-top: 50px;
+  }
+
+  .nordic-box-content h3,
+  .frame-box-content h3,
+  .finland-box h3,
+  .america-box-content h3{
+    font-size: 22px;
+  } 
+
+  .nordic-box-img,
+  .america-box-img{
+    width: 100%;
+  }
+
+  
+.america-pt-content {
+  top: -40px;
+  }
+
+  .america-pt {
+    padding: 10px 0 0;
+  }
+}
+
+@media (max-width: 499.98px) {
+  .scroll-tag li {
+    font-size: 16px;
+    padding: 8px 5px;
+  }
+
+  .section .star {
+    background : url(../images/icon-2.png) no-repeat;
+    width: 15px;
+    height: 15px;
+  }
+
+  .banner .slider-padding { 
+    width: 100%;
+    top: 47%;
+  }
+
+  .aurora-w {
+    width: 95%;
+  }
+
+  .tabs li {
+    font-size: 18px;
+    width: 70px;
+    padding: 12px 10px 5px 10px;
+  } 
+}
+
+@media (max-width: 499.98px) { 
+  .scroll-tag li {
+    padding: 8px 3px;
+  }
+
+  .text-content {
+    padding: 0;
+  }
+
+  .nordic-box-content h3,
+  .frame-box-content h3,
+  .finland-box h3,
+  .america-box-content h3{
+    font-size: 20px;
+  } 
+}
+
+/*  footer  */
+.QR-code {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  display: block;
+  float: left;
+}
+
+.contact-box:last-of-type {
+  align-items: flex-start;
+  width: 0;
+  padding-left: 5%;
+}
+
+.QR-txt {
+  display: inline-block;
+  margin-left: 8px;
+  line-height: 21px;
+  font-size: 0.7rem;
+  white-space:nowrap;
+}
+
+.milktea-bg{
+background-color: var(--lightblue);  
+}
+
+.contact-box-warp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 25%;
+  margin: 20px 0;
+}
+
+.contact-box p span {
+  letter-spacing: 0.2rem;
+}
+
+
+.foot-wrap {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 3% 0;
+  color:  var(--darkblue3);
+}
+
+.footer-left {
+  width: calc(35% - 1px);
+  text-align: left;
+}
+
+.footer-left p {
+  color: var(--darkblue3);
+}
+
+.footer-left h4 {
+  color: var(--darkblue3);
+  font-weight: bold;
+  font-size: 1.05rem;
+  line-height: 30px;
+}
+
+.footer-left p:nth-of-type(1) {
+  color: var(--darkblue3);
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.footer-left .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6.5px 0 6.5px 6px;
+  border-color: transparent transparent transparent var(--darkblue3);
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.footer-left a {
+  color: var(--darkblue3);
+  text-decoration: none;
+}
+
+.footer-line {
+  width: 3px;
+  min-height: 210px;
+  background: var(--darkblue3);
+  margin: 10px 2%;
+}
+
+.footer-right {
+  display: flex;
+  width: 62%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.footer-right p {
+  font-size: 0.8rem;
+  color: var(--darkblue3);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1499.98px) {
+  .contact-box:last-of-type {
+      width: 40%;
+      padding-left: 15%;
+  }
+
+  .contact-box {
+      width: 33%;
+      margin: 0 0 10px;
+  }
+  
+}
+
+@media (max-width: 1200px) {
+  .contact-box:last-of-type {
+      display: none;
+  }
+  .item {
+      padding-top: 60%;
+  }
+  .main-pic img {
+      width: 90%;
+      margin: 0 5%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .contact-box {
+      width: 50%;
+      margin: 0 0 10px;
+      align-items: flex-start;
+  }
+  .contact-box p .contact-box-title {
+      display: block;
+  }
+
+  .footer-line {
+    margin: 10px 5%;
+  }
+
+  .footer-left {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /*============== footer ==============*/
+  footer {
+      font-size: 12px;
+  }
+  .footer-left {
+      width: 100%;
+  }
+
+  .footer-right {
+      width: 100%;
+  }
+
+  .footer-left p{
+    font-size: 14px !important;
+  }
+
+  .footer-left a {
+    font-size: 9px;
+  }
+
+  .footer-left p:nth-of-type(1) {
+    margin-bottom: 50px;
+    margin-top: 30px;
+  } 
+
+  .contact-box-warp {
+    align-items: start;
+  }
+    .contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 10px 0;
+  }
+  .contact-box p span {
+    letter-spacing: 0.15rem;
+  }
+  .contact-box p {
+    margin-bottom: 2px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  /*============== footer ==============*/
+  .foot-wrap {
+      width: 88%;
+      flex-direction: column;
+      padding: 10% 0 5%;
+  }
+
+  .footer-line {
+      display: none;
+  }
+
+  .footer-left {
+    text-align: center;
+  }
+  .footer-right {
+      margin: 10px 0;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .footer-left p:nth-of-type(1) {
+    margin-bottom: 30px;
+    margin-top: 15px;
+  } 
+}
