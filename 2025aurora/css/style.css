@@ -1387,9 +1387,13 @@ figure {
       padding: 70px 0 10px;
     }
 
-    .nordic-box-img,
-    .america-box-img{
+    .nordic-box-img{
       width: 90%;
+      margin: auto;
+    }
+
+    .america-box-img{
+      width: 70%;
       margin: auto;
     }
 
