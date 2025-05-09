@@ -1627,12 +1627,20 @@ figure {
   }
 
   
-.america-pt-content {
-  top: -40px;
+  .america-pt-content {
+    top: -40px;
   }
 
   .america-pt {
     padding: 10px 0 0;
+  }
+
+  .aurora-w {
+    width: 130%;
+  }
+
+  .banner .slider-padding {
+    left: 40%;
   }
 }
 
@@ -1655,6 +1663,10 @@ figure {
 
   .aurora-w {
     width: 95%;
+  }
+
+  .banner .slider-padding {
+    left: 49%;
   }
 
   .tabs li {
