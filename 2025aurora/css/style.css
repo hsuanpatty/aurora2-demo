@@ -416,6 +416,11 @@ section:nth-last-child {
 }
 
 /*  北歐  */
+
+.class-img {
+  width: 100%;
+}
+
 .scroll-bg {
     background: url(../images/bg-1.jpg) top no-repeat;
     background-size: cover;
@@ -581,7 +586,6 @@ padding: 20px 0;
 
 .class-w {
   width: auto;
-  padding-top: 50px;
 }
 
 .nordic-box-img,
@@ -1325,7 +1329,15 @@ figure {
       padding-top: 30px;
     }
 
-    
+    .class-img {
+      position: absolute;
+      width: 100%;
+    }
+
+    .america-pt-content {
+      position: relative;
+      top: 30px;
+  }
 }
 
 @media (min-width:2200px) { 
@@ -1381,10 +1393,6 @@ figure {
   
     li {
       letter-spacing: 0.05rem;
-    }
-
-    .box-top {
-      top: -30px;
     }
 
     .finland-content {
@@ -1458,7 +1466,6 @@ figure {
     position: static;
     width: 22%;
   }
-
 }
   
 
