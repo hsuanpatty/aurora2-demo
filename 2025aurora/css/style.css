@@ -1527,8 +1527,8 @@ figure {
     position: static;
     transform: translate(0, 0);
     background: #6699c1;
-    width: 93%;
-    margin: 24px auto 0;
+    width: 86%;
+    margin: 24px auto 0 20px;
   }   
 
   .usa-p .py-4 {
