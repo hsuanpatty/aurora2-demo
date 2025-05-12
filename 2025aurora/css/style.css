@@ -1266,7 +1266,7 @@ figure {
     }
 
     .travel_price {
-      line-height: 40px;
+      padding-top: 2px;
       font-size: 27px;
     }
 
