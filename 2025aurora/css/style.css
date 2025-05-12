@@ -1266,12 +1266,8 @@ figure {
     }
 
     .travel_price {
-      line-height: 35px;
+      line-height: 40px;
       font-size: 27px;
-    }
-
-    .travel_price_2 {
-      font-size: 25px;
     }
 
     .travel_title {
