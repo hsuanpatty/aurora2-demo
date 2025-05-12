@@ -162,7 +162,7 @@ footer {
 }
 
 .p-3 {
-    padding: 1rem !important;
+    padding: 1rem 1rem 0.5rem!important;
 }
 
 .pt-1 {
@@ -569,14 +569,6 @@ padding: 20px 0;
     letter-spacing: 0.05rem;
 }
 
-.travel_price_2 {
-  text-align: right;
-  font-size: 25px;
-  color: var(--red);
-  font-weight: 600;
-  letter-spacing: 0.05rem;
-}
-
 .travel_price span{
     font-size: 18px;
 }
@@ -753,6 +745,12 @@ padding: 20px 0;
   padding-top: 60px;
 }
 
+.button-wrapper2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .a {
   text-decoration:none;
 }
@@ -841,7 +839,7 @@ figure {
 /*  芬蘭  */
 .finland-center{
   text-align: center;
-  padding: 100px 0 50px;
+  padding: 80px 0 50px;
 }
 
 .finland-box-img img {
@@ -988,7 +986,7 @@ figure {
 /*  美洲遊輪 */
 .america-pt {
   position: relative;
-  padding: 100px 0;
+  padding: 100px 0 50px;
 }
 
 .america-pt-content {
@@ -1008,7 +1006,7 @@ figure {
 .usa-p {
   width: 90%;
   margin: auto;
-  padding: 100px 0 0;
+  padding: 80px 0 0;
 }
 
 .usa-box h3 {
@@ -1105,7 +1103,7 @@ figure {
 
 .alaska-top {
   position: relative;
-  top: -110px;
+  top: -145px;
 }
 
 .aurora-bg {
@@ -1156,10 +1154,6 @@ figure {
     font-size: 20px;
   }
 
-  .travel_price_2 {
-    font-size: 20px;
-  }
-
   .frame2_box {
   flex: 0 0 auto;
   width: 50%;
@@ -1167,10 +1161,6 @@ figure {
   } 
   .frame_d {
     display: flex;
-  }
-
-  .pt-15 {
-    padding-top: 12rem !important;
   }
 
   .aurora-p {
@@ -1234,7 +1224,7 @@ figure {
   }
 
   .aurora-p {
-    padding-bottom: 630px ;
+    padding-bottom: 330px ;
   }
 }
 
@@ -1272,6 +1262,7 @@ figure {
     }
 
     .travel_price {
+      line-height: 30px;
       font-size: 27px;
     }
 
@@ -1331,7 +1322,7 @@ figure {
 
     .class-img {
       position: absolute;
-      width: 80%;
+      width: auto;
     }
 
     .america-pt-content {
@@ -1342,7 +1333,7 @@ figure {
 
 @media (min-width:2200px) { 
   .frame_title2 {
-    color: var(--lightgrey);
+    color: var(--white);
   } 
 
   .aurora-p {
@@ -1476,7 +1467,7 @@ figure {
   }
 
   .title-img {
-    width: 50%;
+    width: 80%;
   }
 
   .aurora-w {
@@ -1545,6 +1536,10 @@ figure {
   .finland-content {
     width: 95%;
   }
+
+  .title-img2 {
+    padding: 50px 0 0;
+  }
 }
 
 
@@ -1583,10 +1578,6 @@ figure {
 
   .button-wrapper {
     padding-top: 20px;
-  }
-
-  .pt-15 {
-    padding-top: 6rem !important;
   }
 
   .frame_grid {  
