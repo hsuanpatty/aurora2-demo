@@ -1089,7 +1089,7 @@ figure {
     top: 50%;
     right: 0;
     transform: translate(-30%, -50%);
-    background: linear-gradient(rgba(255, 255, 255, 0) 18%, rgba(0, 3, 3, 0.5) 100%);
+    background: linear-gradient(rgba(255, 255, 255, 0) 18%, rgba(0, 3, 3, 0.8) 100%);
     width: 25%;
     height: 140px;
     padding: 30px 20px 20px;
