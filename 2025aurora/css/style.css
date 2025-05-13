@@ -1085,15 +1085,15 @@ figure {
 }
 
 .usa-img .usa-img-text {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(-50%, -50%);
-  background: linear-gradient(180deg,rgba(255, 255, 255, 0) 18%, rgba(0, 3, 3, 0.5) 100%); 
-  width: 20%;
-  height: 160px;
-  padding: 30px 20px 20px;
-  border-radius: 0 0 15px 15px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-30%, -50%);
+    background: linear-gradient(rgba(255, 255, 255, 0) 18%, rgba(0, 3, 3, 0.5) 100%);
+    width: 25%;
+    height: 160px;
+    padding: 30px 20px 20px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .usa-img .usa-img-text p{
