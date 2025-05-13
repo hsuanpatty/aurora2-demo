@@ -1344,6 +1344,13 @@ figure {
     }
 }
 
+@media (min-width:1950px) { 
+   .scroll-bg {
+    background: url(../images/bg-1.jpg) bottom no-repeat;
+        background-size: cover;
+  }
+}
+
 @media (min-width:2200px) { 
   .frame_title2 {
     color: var(--white);
@@ -1352,6 +1359,7 @@ figure {
   .aurora-p {
     padding-bottom: 800px ;
   }
+
 }
 
 /* media max */
@@ -1369,7 +1377,11 @@ figure {
 
   .america-pt-content {
     top: 120px;
-}
+  }
+
+  .scroll-tag {
+    margin-right: 50px;
+  }
 }
 
 @media (max-width: 1199.98px) { 
@@ -1437,7 +1449,7 @@ figure {
 
     
   .alaska-top {
-    padding: 45px 40px;
+    padding: 45px 40px 0;
   }
 
   
@@ -1457,7 +1469,7 @@ figure {
   .usa-img .usa-img-text {
     position: absolute;
     transform: translate(-10%, -50%);
-    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 18%, rgba(0, 3, 3, 0.5) 100%); 
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) -35%, rgba(0, 3, 3, 1) 100%);
     width: 40%;
     height: 140px;
     padding: 20px 15px;
@@ -1468,6 +1480,10 @@ figure {
   .class-w-2 {
     position: static;
     width: 22%;
+  }
+
+  .scroll-tag {
+    margin-right: 0;
   }
 }
   
@@ -1522,7 +1538,7 @@ figure {
   }
 
   .slash {
-    width: 6%;
+    width: 5%;
   }
   
   .aurora-p {
@@ -1539,6 +1555,7 @@ figure {
     background: #6699c1;
     width: 86%;
     margin: 24px auto 0 ;
+    height: 120px;
   }   
 
   .usa-p .py-4 {
@@ -1557,7 +1574,7 @@ figure {
 
 @media (max-width: 575.98px) { 
   .scroll-bg {
-    background: url(../images/bg-2.jpg) top no-repeat;
+    background: url(../images/bg-2.jpg) bottom no-repeat;
   }
 
   .class-img {
@@ -1653,10 +1670,6 @@ figure {
   }
 
   .usa-img .usa-img-text {
-    position: static;
-    transform: translate(0, 0);
-    background: #6699c1;
-    width: 74;
     margin: 24px auto 0;
   } 
 }
@@ -1691,9 +1704,7 @@ figure {
     width: 70px;
     padding: 12px 10px 5px 10px;
   } 
-}
 
-@media (max-width: 499.98px) { 
   .scroll-tag li {
     padding: 8px 3px;
   }
@@ -1708,6 +1719,12 @@ figure {
   .america-box-content h3{
     font-size: 20px;
   } 
+}
+
+@media (max-width: 375.98px) { 
+    .scroll-bg {
+    background: url(../images/bg-3.jpg) top no-repeat;
+  }
 }
 
 /*  footer  */
